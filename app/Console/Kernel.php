@@ -12,7 +12,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('send:pending-tasks-reminder')->everyMinute();
+        $schedule->command('send:pending-tasks-reminder')->daily();
     }
 
     /**
